@@ -1,11 +1,20 @@
 * {
     font-family: 'Helvetica Neue', sans-serif;
+    border: 3px solid red;
 }
 
 header,
 footer,
 .introduction {
     background-color: #1f2937;
+    font-size: 16px;
+    color: #e5e7eb;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 150px;
 }
 
 header h1 {
@@ -15,25 +24,61 @@ header h1 {
 
 header ul {
     list-style-type: none;
+    display: flex;
+    gap: 24px;
+    padding: 0px;
 }
 
-header a,
-footer,
-.introduction {
-    font-size: 18px;
+header a {
     text-decoration: none;
     color: #e5e7eb;
+}
+
+.introduction {
+    display: flex;
+    justify-content: space-between;
+    padding: 60px 150px;
+    align-items: flex-start;
+}
+
+.hero-text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
 }
 
 .introduction h1 {
     font-size: 48px;
     font-weight: bolder;
     color: #f9faf8;
+    margin: 0px;
 }
 
 .introduction img {
     background-color: #e5e7eb;
-    max-width: 360px;
+    max-width: 400px;
+    margin: 0px;
+    padding: 0px;
+}
+
+.information {
+    text-align: center;
+    padding: 0px 150px;
+}
+
+.information h2 {
+    padding: 20px;
+}
+
+.information-imgs {
+    display: flex;
+    justify-content: center;
+    padding: 0px;
+    gap: 24px;
+}
+
+.information div div {
+    max-width: 200px;
 }
 
 .information img {
@@ -56,12 +101,16 @@ button {
     font-size: 36px;
     color: #1f2937;
     font-style: italic;
+    padding: 0px 150px;
+    display: flex;
 }
 
 .quote figcaption {
     font-weight: bold;
     font-style: normal;
     font-size: 24px;
+    display: flex;
+    justify-content: flex-end;
 }
 
 .signup {
