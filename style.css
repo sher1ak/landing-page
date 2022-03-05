@@ -1,6 +1,6 @@
 * {
     font-family: 'Helvetica Neue', sans-serif;
-    border: 3px solid red;
+    /* border: 3px solid red; */
 }
 
 header,
@@ -45,6 +45,7 @@ header a {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    margin-right: 48px;
 }
 
 .introduction h1 {
@@ -56,7 +57,7 @@ header a {
 
 .introduction img {
     background-color: #e5e7eb;
-    max-width: 400px;
+    max-width: 360px;
     margin: 0px;
     padding: 0px;
 }
@@ -64,6 +65,7 @@ header a {
 .information {
     text-align: center;
     padding: 0px 150px;
+    margin-bottom: 100px;
 }
 
 .information h2 {
@@ -90,7 +92,7 @@ header a {
 button {
     color: #e5e7eb;
     background-color: #3882f6;
-    border: none;
+    border: 3px solid #e5e7eb;
     border-radius: 6px;
     padding: 8px 24px;
     font-weight: bold;
@@ -101,7 +103,7 @@ button {
     font-size: 36px;
     color: #1f2937;
     font-style: italic;
-    padding: 0px 150px;
+    padding: 0px 120px;
     display: flex;
 }
 
@@ -114,6 +116,31 @@ button {
 }
 
 .signup {
-    background-color: #3882f6;
     color: #f9faf8;
+    display: flex;
+    flex: auto;
+    justify-content: center;
+    padding: 50px 150px;
+}
+
+.signup_blue {
+    background-color: #3882f6;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 36px 100px;
+    flex: 1;
+    border-radius: 8px;
+}
+
+.signup_text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: 48px;
+}
+
+.signup_text h3,
+.signup_text p {
+    margin: 0px;
 }
